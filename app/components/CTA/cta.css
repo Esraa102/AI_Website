@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .cta-container {
+    @apply rounded-md flex items-center flex-wrap justify-between gap-8 w-[90%] mx-auto p-8;
+  }
+  .cta-btn {
+    @apply bg-black text-white text-xl py-2 px-6 rounded-full hover:scale-110 transition duration-300;
+  }
+}

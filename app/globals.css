@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+:root {
+  --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
+}
+
+.gradient__bg {
+  background: radial-gradient(circle at 12% 20%, #002853 0%, #040c18 100%);
+}
+.get-started-gradient__bg {
+  background: var(--gradient-bar);
+}
+.gradient__text {
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.wgpt3-gradient__bg {
+  background: radial-gradient(
+    circle at 9% 13%,
+    rgba(6, 98, 189, 1) 0%,
+    rgba(4, 44, 84, 1) 76%
+  );
+}
+@layer base {
+  html {
+    font-family: "Manrope", sans-serif;
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-colorBG;
+  }
+}
+@layer components {
+  .section-margin {
+    @apply my-16 mx-8 sm:m-16 md:my-16  md:mx-24;
+  }
+  .section {
+    @apply container mx-auto py-4 px-4  mb-8;
+  }
+  .line {
+    @apply w-10 h-1 block my-5;
+    background: var(--gradient-bar);
+  }
+  .link-hover-effect {
+    @apply hover:text-orange transition-colors duration-300;
+  }
+}
+/* Animation */
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@-webkit-keyframes scale-up-center {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #31c1e5;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #011e3e;
+}

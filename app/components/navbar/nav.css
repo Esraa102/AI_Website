@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .gpt3__navbar {
+    @apply flex items-center justify-between  container mx-auto py-4 px-4 sticky top-0 backdrop-blur;
+  }
+  .navbar-links {
+    @apply hidden lg:flex flex-1 items-center  justify-center gap-x-8;
+  }
+  .signIN-signup-container {
+    @apply flex gap-[10px] items-center;
+  }
+  .link {
+    @apply text-white font-[500] text-[18] leading-6;
+  }
+  .toggle-btn {
+    @apply inline text-white text-2xl cursor-pointer ml-4 lg:hidden;
+  }
+  .mobile-menue {
+    @apply absolute  w-[80%] flex flex-col items-center gap-y-4 p-4 font-semibold  rounded-md  left-0 ml-[10%] top-[110px] z-10;
+  }
+  .signUp-btn {
+    @apply p-[5px] sm:px-[15px] sm:py-[5px] lg:px-8 lg:py-2 rounded-md bg-orange hover:scale-95 transition-transform duration-300;
+  }
+}

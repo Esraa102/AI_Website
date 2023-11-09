@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .article-des {
+    @apply bg-colorBlog p-4;
+  }
+  .article-date {
+    @apply text-white mb-4 text-sm;
+  }
+  .article-header {
+    @apply text-white mb-4 text-2xl font-extrabold;
+  }
+  .article-read-all {
+    @apply text-xs text-white  mt-10;
+  }
+}

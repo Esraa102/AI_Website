@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .heading {
+    @apply text-3xl lg:text-[50px] leading-[75px] mb-5 font-extrabold;
+  }
+  .input {
+    @apply w-[70%] px-2 py-3 bg-[#052D56] text-white caret-orange placeholder:text-textColor focus:border-none focus:outline-none;
+  }
+}

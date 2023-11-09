@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .features-heading {
+    @apply text-2xl lg:text-4xl font-extrabold mb-8 flex flex-col lg:flex-row items-baseline    gap-10;
+  }
+  .sub-section {
+    @apply flex items-baseline justify-between  mb-5;
+  }
+  .sub-section-heading {
+    @apply text-xl font-extrabold text-white;
+  }
+  .sub-section-paragraph {
+    @apply text-sm text-textColor leading-6 font-normal;
+  }
+}
